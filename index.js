@@ -45,12 +45,13 @@ class TextFit extends Component {
         {...this.props}
         ref="field"
         style={[
-          this.props.style, 
+         
           { 
             fontSize: this.state.size, 
             color: this.state.complete ? 'black': 'transparent',
             width: this.props.width,
-          }
+          },
+       this.props.style
         ]}>
           {this.props.children}
       </Text>
