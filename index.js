@@ -27,6 +27,7 @@ class TextFit extends Component {
           this.setState({size: this.state.size -= 0.5, complete: true});
           this.setSize()
         }
+        if(this.props.onComplete)this.props.onComplete(true)
       } else {
         if (!this.state.complete) {
           this.setState({size: this.state.size += 0.5})
